@@ -44,6 +44,7 @@ recognition.onresult = function(event) {
     {
         let command = event.results[i][0].transcript;
         command=command.split(' ').pop().toLowerCase();
+        console.log(command);
         if(command=="bike"||command=="left"||command=="let"||command=="that"||command=="love")
         {
    
@@ -77,7 +78,10 @@ function preload() {
     this.load.image('ground', './assets/platform.png');
     this.load.spritesheet('dude', './assets/dude.png',
         { frameWidth: 32, frameHeight: 48 }  
+
     );
+
+    this.load.audio('top2','./assets/sound/yo.ogg');
  
 }
 var platforms;
@@ -86,6 +90,7 @@ var stars;
 var score = 0;
 var scoretext;
 var bombs;
+var yo;
 function create() {
 
     this.add.image(400, 300, 'sky');          
@@ -94,6 +99,7 @@ function create() {
     platforms.create(600, 400, 'ground');
     platforms.create(50, 250, 'ground');
     platforms.create(750, 220, 'ground');
+    yo = this.sound.add('top2');
 
 
     player = this.physics.add.sprite(100, 450, 'dude');       
@@ -152,6 +158,7 @@ function collectStar(player, star) {
         let bomb = bombs.create(x, 16, 'bomb');
         bomb.setCollideWorldBounds(true);
         bomb.setBounce(1);
+        // yo.play();
         bomb.setVelocity(Phaser.Math.Between(-200,200),20);
     }
 }
