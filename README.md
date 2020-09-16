@@ -17,4 +17,8 @@ to run the game :-
 
 ## Screenshots
 
-![image](link)
+    Try your best to score as high as possible (it's not that easy tho :)).
+    
+![image](https://raw.githubusercontent.com/Nk095291/SpeechRecognitionGame/master/screenshots/Screenshot%20from%202020-09-16%2011-32-18.png)
+
+   
