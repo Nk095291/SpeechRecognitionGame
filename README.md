@@ -1,4 +1,7 @@
 # SpeechRecognitionGame
+
+Try this Game here -> [link](https://jumping-negi.herokuapp.com/)
+
 A game created using Phaser 3 where player tries to collect as many coins as he can while avoiding obstacles (like bombs).
 you can also play this game using your voice :)
 
@@ -11,3 +14,6 @@ to run the game :-
 3. Go to "http://localhost:4000".
 
 4. enjoy the Game .
+
+## Screenshots
+
