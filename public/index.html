@@ -24,51 +24,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jumping Negi</title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-        .div1{
-            background-image: url("assets/negi.png");
-            background-size: cover;
-            width: 900px;
-            height: 800px;
-            float: right;
-        }
-        .div2{
-            position: fixed;
-            bottom: 0%;
-            left:5%;
-        }
-        p{
-            font-size: 2rem;
-            font-family: cursive;
-        }
-        .command{
-            font-size: 1.2rem;
-        }
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+
+    
 </head>
 
 <body>
-    <div class="div1">
+    <p>
+        <span class="subheading">
 
-    </div>
-    <div class="div2">
-        <p>
-            you can also play this game using your voice ;)
-        </p>
-        <p class="command">
-        	to move left : "left arrow" or just say "left" ,   
-        </p>
-        <p class="command">
-        	to move right : "right arrow" or just say "right"
-        </p><p class="command">
-        	to move left : "up arrow" or just say "jump"
-        </p><p class="command">
-        	to stop : don't press any key or just say "stop"
-        </p>
-    </div>
+            &mdash; try saying : left, right, jump, stop &mdash;
+        </span>
+        <span>
+          Jumping negi
+        </span>
+        <span class="subheading">
+
+            &mdash; or Use arrow key to play &mdash;
+        </span>
+      </p>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+   
 
     <script src="script.js">
     </script>
